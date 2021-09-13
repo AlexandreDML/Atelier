@@ -1,5 +1,5 @@
 def test() -> None:
-    """procédure de test pour a_repetition"""
+    """procédure de test pour a_repetitions"""
     #test liste vide 
     print("resultat attendu -> False")
     print(a_repetitions([]))
