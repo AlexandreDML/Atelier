@@ -28,7 +28,7 @@ def full_name(str_arg: str)-> str:
 
 #import re
 #défini le schema d'un mail valide
-REGEX = r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}'
+REGEX = r'[A-Za-z0-9._-]+(\.[A-Za-z0-9._-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}'
 def is_mail(str_arg:str)->(int,int):
     """
     programme qui vérifie si un mail est valide
@@ -68,7 +68,7 @@ def test_is_mail():
     code_mail_3 = "mael.belliard@%$ù**$.net"
     code_mail_4 = "mael.belliard@lapostenet"
     code_mail_5 = "mael.belliard@laposte.£%µ"
-    code_mail_6 = "@laposte.net"
+    code_mail_6 = "%=+@laposte.net"
     #test valide
     print("Résultat attendu : (1, 0)")
     print("Le mail", code_mail_1, "est un mail", is_mail(code_mail_1), "\n\n")
