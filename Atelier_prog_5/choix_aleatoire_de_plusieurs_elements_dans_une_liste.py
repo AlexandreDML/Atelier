@@ -7,20 +7,12 @@ Created on Mon Sep 20 10:02:02 2021
 import random
 def extract_elements_list(list_in_which_to_choose: list, int_nbr_of_element_to_extract: int) -> list:
     """
-    
-
-    Parameters
-    ----------
-    list_in_which_to_choose : list
-        DESCRIPTION.
-    int_nbr_of_element_to_extract : int
-        DESCRIPTION.
-
-    Returns
-    -------
-    list
-        DESCRIPTION.
-
+    programme qui va extraire de manière aléatoire une quantitée de chiffre voulu
+    dans une autre liste
+    input:
+        une liste triée
+    output:
+        une liste d'éléments choisi au hasard
     """
     #variable
     liste = []
@@ -34,7 +26,7 @@ def extract_elements_list(list_in_which_to_choose: list, int_nbr_of_element_to_e
 
 def test_extract():
     """
-    programmede test
+    programme de test de la fonction extract_elements_list
     """
     # Test de votre code
     lst_sorted=[i for i in range(10)]
